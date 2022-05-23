@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Width="450" Height="250"
+        x:Class="Chat.Authorization"
+        Title="Authorization"
+		WindowStartupLocation="CenterScreen">
+	<Grid ColumnDefinitions="150,150,150" RowDefinitions="auto,auto,auto,auto"  Margin="4" >
+	<TextBlock Text="Login:" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Radiotechnika" Margin="0,30,5,0" />
+	<TextBlock Text="Password:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Radiotechnika" Margin="0,0,5,0"/>
+	<TextBox Name="Login" Watermark="Enter login" Grid.Row="0"  Margin="0,30,5,0" Grid.Column="1"/>
+	<TextBox Name ="Password" Watermark="Enter password" Grid.Row="1" Margin="0,10,5,0" Grid.Column="1"/>
+	<Button Name ="LoginButton" Click="LoginButtonOnClick" Background="#ffc9f5" BorderBrush="Black"  Grid.Row="2" Margin="0,10,5,0" Grid.Column="1" Width ="150" FontFamily="Radiotechnika">Login</Button>
+	<Button Name ="SignupButton" Click="SignupButtonOnClick" Background="#ffc9f5" BorderBrush="Black"  Grid.Row="3" Margin="0,10,5,0" Grid.Column="1"  Width="150" FontFamily="Radiotechnika">Sign Up</Button>
+
+</Grid>
+
+</Window>
